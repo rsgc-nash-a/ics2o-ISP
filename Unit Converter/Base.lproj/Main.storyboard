@@ -56,7 +56,7 @@
         <!--Volume-->
         <scene sceneID="UPO-hd-d2G">
             <objects>
-                <viewController id="sen-X7-f4O" userLabel="Volume" sceneMemberID="viewController">
+                <viewController id="sen-X7-f4O" userLabel="Volume" customClass="VolumeViewController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IRc-7u-hOw"/>
                         <viewControllerLayoutGuide type="bottom" id="SGZ-bU-3U0"/>
@@ -74,7 +74,7 @@
         <!--Area-->
         <scene sceneID="yPY-4i-JMM">
             <objects>
-                <viewController id="Axg-iT-MPX" userLabel="Area" sceneMemberID="viewController">
+                <viewController id="Axg-iT-MPX" userLabel="Area" customClass="AreaViewController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9zc-4N-hcv"/>
                         <viewControllerLayoutGuide type="bottom" id="2hT-Cu-JpC"/>
@@ -92,7 +92,7 @@
         <!--Length-->
         <scene sceneID="ySN-Ac-XDj">
             <objects>
-                <viewController id="bk4-AW-frg" userLabel="Length" sceneMemberID="viewController">
+                <viewController id="bk4-AW-frg" userLabel="Length" customClass="LengthViewController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EeQ-aA-TZc"/>
                         <viewControllerLayoutGuide type="bottom" id="6tW-C9-Ff4"/>
