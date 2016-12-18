@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6C91021E06271F00D884E6 /* unitsListLength.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F6C91011E06271F00D884E6 /* unitsListLength.plist */; };
 		3FBB9A1F1E032A7E0065AFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */; };
 		3FBB9A211E032A7E0065AFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB9A201E032A7E0065AFF2 /* ViewController.swift */; };
 		3FBB9A241E032A7E0065AFF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBB9A221E032A7E0065AFF2 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F6C91011E06271F00D884E6 /* unitsListLength.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = unitsListLength.plist; path = ../unitsListLength.plist; sourceTree = "<group>"; };
 		3FBB9A1B1E032A7E0065AFF2 /* Unit Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBB9A201E032A7E0065AFF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		3FBB9A1D1E032A7E0065AFF2 /* Unit Converter */ = {
 			isa = PBXGroup;
 			children = (
+				3F6C91011E06271F00D884E6 /* unitsListLength.plist */,
 				3FDA5AD51E043C42008C159C /* UnitFile.swift */,
 				3FDA5AD31E0438F4008C159C /* VolumeViewController.swift */,
 				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6C91021E06271F00D884E6 /* unitsListLength.plist in Resources */,
 				3FBB9A291E032A7E0065AFF2 /* LaunchScreen.storyboard in Resources */,
 				3FBB9A261E032A7E0065AFF2 /* Assets.xcassets in Resources */,
 				3FBB9A241E032A7E0065AFF2 /* Main.storyboard in Resources */,

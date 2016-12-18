@@ -9,6 +9,7 @@
 import UIKit
 
 class AreaViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    // MARK: Properties
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,7 @@ class AreaViewController: UIViewController, UIPickerViewDataSource, UIPickerView
 
     //This is the data source for the UI Picker View
     let areaPickerData = ["one", "two"]
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,7 +32,8 @@ class AreaViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     // MARK: - Delegets and Data
     // MARK: - Data sources
-    // this tells the UI Picker view how many spinning parts to show
+    // This tells the UI Picker view how many spinning parts to show
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         //we only need one so return, 
         return 1
