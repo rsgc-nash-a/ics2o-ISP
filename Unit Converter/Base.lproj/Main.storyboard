@@ -178,6 +178,10 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-Kn-V62" userLabel="Length Picker Input">
                                 <rect key="frame" x="0.0" y="24" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bk4-AW-frg" id="q3S-4b-rqK"/>
+                                    <outlet property="delegate" destination="bk4-AW-frg" id="nch-DY-rQy"/>
+                                </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yVH-A9-JBf" userLabel="Length Button">
                                 <rect key="frame" x="164" y="314" width="46" height="30"/>

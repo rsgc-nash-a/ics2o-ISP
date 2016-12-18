@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   unitsListLength.plist
-   Unit Converter
-
-   Created by Aaron Nash on 2016-12-17.
-   Copyright (c) 2016 Aaron Nash. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>Centimeter</key>
+	<integer>1</integer>
+	<key>Meter</key>
+	<integer>100</integer>
+	<key>Kilometer</key>
+	<real>10000</real>
+	<key>Milimeter</key>
+	<real>0.1</real>
+	<key>Inch</key>
+	<real>0.393701</real>
+	<key>Foot</key>
+	<real>30.48</real>
+	<key>Yard</key>
+	<real>91.44</real>
+	<key>Mile</key>
+	<real>160934.4</real>
+</dict>
 </plist>
