@@ -21,7 +21,7 @@ class AreaViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var areaOutput: UILabel!
 
     //This is the data source for the UI Picker View
-    let areaPickerData = ["uno", "dos", "tres"]
+    let areaPickerData = ["one", "two"]
     
     
     override func didReceiveMemoryWarning() {
@@ -42,16 +42,17 @@ class AreaViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         return areaPickerData.count
         
     }
+    // MARK: - Delegets
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // This tells the areaUIPicker View what to show in each row
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // we want it to return the the areaPickerRow's text
+        return areaPickerData[row]
+        
     }
-    */
-
+    // This method below will fire whenever the user selects a row from the data source in the picker view
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        areaOutput.text = areaPickerData[row]
+        
+    }
 }
