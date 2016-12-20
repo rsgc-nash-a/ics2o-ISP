@@ -12,7 +12,8 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
 
     // We are putting this here so that we can use throught the whole class
     var unitsLength: NSDictionary = [:]
-    
+    // We are now going to define an NSAarray here
+    var keysLength: NSArray!
     override func viewDidLoad() {
         super.viewDidLoad()
         // We now want to put all of the contents from unitsListLength.plist
@@ -22,8 +23,17 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let filePath = appBundle.path(forResource: "unitsListLength", ofType: "plist")!
         // We now are loading the content of the file into the dictioanary
         unitsLength = NSDictionary(contentsOfFile: filePath)!
+        // Now we need to Initalize the keys with the names of the units
+        keysLength = unitsLength.allKeys as NSArray
+        // This function will sort the keys
+      //  keysLength = keysLength.sorted(by: sortKeys as! (NSFastEnumerationIterator.Element, NSFastEnumerationIterator.Element) -> Bool) as NSArray!
     }
-
+    // We are now creating a function that we can call whenever we want to sort our keys
+   // func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
+    //    let firstKey = first as! String
+    //    let secoondKey = second as! String
+    //    firstKey.caseInsensitiveCompare(second as! String)
+   // }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,13 +51,12 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     // We are now telling the picker view what we want each row to say, so that the user will know which one to choose from.
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        // We want the titles for the row to be the key in the unitsListLength.plist file
+    // We want the titles for the row to be the key in the unitsListLength.plist file
         let keys = unitsLength.allKeys as NSArray
         
         let title = keys.object(at: row) as! String
         
         return title
-        
-        
     }
+    
    }
