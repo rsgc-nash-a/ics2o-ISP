@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Centimeter</key>
+	<key>Centimeter - cm</key>
 	<integer>1</integer>
-	<key>Meter</key>
+	<key>Meter - M</key>
 	<integer>100</integer>
-	<key>Kilometer</key>
+	<key>Kilometer - KM</key>
 	<real>10000</real>
-	<key>Milimeter</key>
+	<key>Milimeter - mm</key>
 	<real>0.1</real>
 	<key>Inch</key>
 	<real>0.393701</real>
@@ -18,5 +18,25 @@
 	<real>91.44</real>
 	<key>Mile</key>
 	<real>160934.4</real>
+	<key>Finger Breadth - אצבע</key>
+	<integer>2</integer>
+	<key>Hand Breadth - טפח </key>
+	<integer>8</integer>
+	<key>Cubit - אמה</key>
+	<integer>48</integer>
+	<key>Seet Capol -</key>
+	<integer>16</integer>
+	<key>Zeres - זרת</key>
+	<integer>24</integer>
+	<key>Kanah -</key>
+	<integer>288</integer>
+	<key>Ris (Staduim) - ריס</key>
+	<integer>12800</integer>
+	<key>Talmudic Mile - מיל תלמודי</key>
+	<integer>96000</integer>
+	<key>Persian Mile - מיל פרשג</key>
+	<integer>384000</integer>
+	<key>Day&apos;s Walk - מלך יום</key>
+	<integer>3840000</integer>
 </dict>
 </plist>

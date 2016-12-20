@@ -25,16 +25,17 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         unitsLength = NSDictionary(contentsOfFile: filePath)!
         // Now we need to Initalize the keys with the names of the units
         keysLength = unitsLength.allKeys as NSArray
-        // This function will sort the keys
-      //  keysLength = keysLength.sorted(by: sortKeys as! (NSFastEnumerationIterator.Element, NSFastEnumerationIterator.Element) -> Bool) as NSArray!
+        // Sort the alf keys in ascending order
+        //keysLength = keysLength.sort(sortKeys)
     }
-    // We are now creating a function that we can call whenever we want to sort our keys
-   // func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
-    //    let firstKey = first as! String
-    //    let secoondKey = second as! String
-    //    firstKey.caseInsensitiveCompare(second as! String)
-   // }
-    override func didReceiveMemoryWarning() {
+    func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
+        let firstKey = first as! String
+        let secondKey = second as! String
+        let comparison = firstKey.caseInsensitiveCompare(secondKey) == ComparisonResult.orderedAscending
+        // We want it to compare based on their position on the list
+        return comparison
+    }
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
