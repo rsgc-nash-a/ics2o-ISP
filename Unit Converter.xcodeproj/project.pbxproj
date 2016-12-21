@@ -45,6 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FAB08E71E0AD2B900D47AA3 /* Length */ = {
+			isa = PBXGroup;
+			children = (
+				3F6C91011E06271F00D884E6 /* unitsListLength.plist */,
+				3FDA5ACF1E043865008C159C /* LengthViewController.swift */,
+			);
+			name = Length;
+			sourceTree = "<group>";
+		};
+		3FAB08E81E0AD2C900D47AA3 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA5AD31E0438F4008C159C /* VolumeViewController.swift */,
+			);
+			name = Volume;
+			sourceTree = "<group>";
+		};
+		3FAB08EA1E0AD2E500D47AA3 /* Area */ = {
+			isa = PBXGroup;
+			children = (
+				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
+			);
+			name = Area;
+			sourceTree = "<group>";
+		};
 		3FBB9A121E032A7E0065AFF2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +89,9 @@
 		3FBB9A1D1E032A7E0065AFF2 /* Unit Converter */ = {
 			isa = PBXGroup;
 			children = (
-				3FDA5ACF1E043865008C159C /* LengthViewController.swift */,
-				3F6C91011E06271F00D884E6 /* unitsListLength.plist */,
-				3FDA5AD31E0438F4008C159C /* VolumeViewController.swift */,
-				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
+				3FAB08E71E0AD2B900D47AA3 /* Length */,
+				3FAB08E81E0AD2C900D47AA3 /* Volume */,
+				3FAB08EA1E0AD2E500D47AA3 /* Area */,
 				3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */,
 				3FBB9A201E032A7E0065AFF2 /* ViewController.swift */,
 				3FBB9A221E032A7E0065AFF2 /* Main.storyboard */,

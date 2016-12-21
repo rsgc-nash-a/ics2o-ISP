@@ -69,6 +69,24 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     //MARK: Convert Function
     @IBAction func convertButtonLength(_ sender: Any) {
+        //I: Retrieve the numerical value from the text feild
+        //let amountAsString = txtAmountLength.text!
+        //We need to convert this now so we can math with it
+        let numberFormater = NumberFormatter()
+        
+        //II: Retrieve the unit type that was selected
+        //III: Retrieve the unit type that was selected to retrurn to
+        //IV: Apply the two step conversion
+        //V: Format the result as a string
+        //VI: Assign the result string to the resultLength label
+        
     }
-    
+    //This is a function to close the keyboard
+    func closeKeyBoard(){
+        self.view.endEditing(true)
+    }
+    // This function overides the previus function
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        closeKeyBoard()
+    }
    }
