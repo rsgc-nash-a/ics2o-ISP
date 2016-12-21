@@ -4,19 +4,19 @@
 <dict>
 	<key>Centimeter - cm</key>
 	<integer>1</integer>
-	<key>Meter - M</key>
+	<key>Meter - m</key>
 	<integer>100</integer>
-	<key>Kilometer - KM</key>
+	<key>Kilometer - km</key>
 	<real>10000</real>
 	<key>Milimeter - mm</key>
 	<real>0.1</real>
-	<key>Inch</key>
+	<key>Inch - in.</key>
 	<real>0.393701</real>
-	<key>Foot</key>
+	<key>Foot - ft.</key>
 	<real>30.48</real>
-	<key>Yard</key>
+	<key>Yard - yd.</key>
 	<real>91.44</real>
-	<key>Mile</key>
+	<key>Mile - mi.</key>
 	<real>160934.4</real>
 	<key>Finger Breadth - אצבע</key>
 	<integer>2</integer>

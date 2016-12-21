@@ -28,6 +28,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Sort the alf keys in ascending order
         //keysLength = keysLength.sort(sortKeys)
     }
+    // this is the function that is used to sort the keys
     func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
         let firstKey = first as! String
         let secondKey = second as! String
