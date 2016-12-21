@@ -2,21 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Centimeter - cm</key>
+	<key>Centimeter - סנטימטר</key>
 	<integer>1</integer>
-	<key>Meter - m</key>
+	<key>Meter - מטר</key>
 	<integer>100</integer>
-	<key>Kilometer - km</key>
+	<key>Kilometer - קילומטר</key>
 	<real>10000</real>
-	<key>Milimeter - mm</key>
+	<key>Milimeter - מלימטר</key>
 	<real>0.1</real>
-	<key>Inch - in.</key>
+	<key>Inch - אינטש</key>
 	<real>0.393701</real>
-	<key>Foot - ft.</key>
+	<key>Foot - פוט</key>
 	<real>30.48</real>
-	<key>Yard - yd.</key>
+	<key>Yard - ירד</key>
 	<real>91.44</real>
-	<key>Mile - mi.</key>
+	<key>Mile - מיל</key>
 	<real>160934.4</real>
 	<key>Finger Breadth - אצבע</key>
 	<integer>2</integer>
@@ -24,17 +24,17 @@
 	<integer>8</integer>
 	<key>Cubit - אמה</key>
 	<integer>48</integer>
-	<key>Seet Capol -</key>
+	<key>Seet Capol - סיט כפול</key>
 	<integer>16</integer>
 	<key>Zeres - זרת</key>
 	<integer>24</integer>
-	<key>Kanah -</key>
+	<key>Kanah - קנה</key>
 	<integer>288</integer>
 	<key>Ris (Staduim) - ריס</key>
 	<integer>12800</integer>
 	<key>Talmudic Mile - מיל תלמודי</key>
-	<integer>96000</integer>
-	<key>Persian Mile - מיל פרשג</key>
+	<real>11500</real>
+	<key>Persian Mile - פרסה</key>
 	<integer>384000</integer>
 	<key>Day&apos;s Walk - מלך יום</key>
 	<integer>3840000</integer>

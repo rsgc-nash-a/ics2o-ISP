@@ -14,6 +14,12 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     var unitsLength: NSDictionary = [:]
     // We are now going to define an NSAarray here
     var keysLength: NSArray!
+    // MARK: Outlets
+    
+    @IBOutlet weak var inputLength: UITextField!
+    @IBOutlet weak var resultLength: UILabel!
+    @IBOutlet weak var unitFromLength: UIPickerView!
+    @IBOutlet weak var unitToLength: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // We now want to put all of the contents from unitsListLength.plist
@@ -28,6 +34,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Sort the alf keys in ascending order
         //keysLength = keysLength.sort(sortKeys)
     }
+    // MARK: Sort Function
     // this is the function that is used to sort the keys
     func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
         let firstKey = first as! String
@@ -59,6 +66,9 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         let title = keys.object(at: row) as! String
         
         return title
+    }
+    //MARK: Convert Function
+    @IBAction func convertButtonLength(_ sender: Any) {
     }
     
    }

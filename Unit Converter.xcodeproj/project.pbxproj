@@ -66,7 +66,6 @@
 			children = (
 				3FDA5ACF1E043865008C159C /* LengthViewController.swift */,
 				3F6C91011E06271F00D884E6 /* unitsListLength.plist */,
-				3FDA5AD51E043C42008C159C /* UnitFile.swift */,
 				3FDA5AD31E0438F4008C159C /* VolumeViewController.swift */,
 				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
 				3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */,
@@ -75,6 +74,7 @@
 				3FBB9A251E032A7E0065AFF2 /* Assets.xcassets */,
 				3FBB9A271E032A7E0065AFF2 /* LaunchScreen.storyboard */,
 				3FBB9A2A1E032A7E0065AFF2 /* Info.plist */,
+				3FDA5AD51E043C42008C159C /* UnitFile.swift */,
 			);
 			path = "Unit Converter";
 			sourceTree = "<group>";
