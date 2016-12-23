@@ -34,6 +34,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         // Sort the alf keys in ascending order
         //keysLength = keysLength.sort(sortKeys)
     }
+    // MARK: Functions
     // MARK: Sort Function
     // this is the function that is used to sort the keys
     func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
@@ -67,7 +68,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         
         return title
     }
-    //MARK: Convert Function
+    // MARK: Convert Function
     @IBAction func convertButtonLength(_ sender: Any) {
         //I: Retrieve the numerical value from the text feild
         //let amountAsString = txtAmountLength.text!
@@ -81,6 +82,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         //VI: Assign the result string to the resultLength label
         
     }
+    // MARK: Keyboard close function
     //This is a function to close the keyboard
     func closeKeyBoard(){
         self.view.endEditing(true)
