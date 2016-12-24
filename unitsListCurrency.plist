@@ -14,7 +14,35 @@
 	<real>0.02</real>
 	<key>Mesimas - </key>
 	<real>0.04</real>
-	<key>New item</key>
-	<integer>0</integer>
+	<key>Isar -</key>
+	<real>0.08</real>
+	<key>Dopundium - </key>
+	<real>0.16</real>
+	<key>Ma&apos;a -</key>
+	<real>0.32</real>
+	<key>Gera -</key>
+	<real>0.32</real>
+	<key>Istera -</key>
+	<real>0.96</real>
+	<key>Tarpik -</key>
+	<real>0.96</real>
+	<key>Dinar -</key>
+	<real>1.92</real>
+	<key>Zuz - זוז</key>
+	<real>1.92</real>
+	<key>Shekel - שקל</key>
+	<real>3.84</real>
+	<key>Beka -</key>
+	<real>3.84</real>
+	<key>Sela -</key>
+	<real>7.68</real>
+	<key>Holy Shekel - שקל הקדוש</key>
+	<real>7.68</real>
+	<key>Golden Dinar -</key>
+	<integer>48</integer>
+	<key>Maneh -</key>
+	<integer>192</integer>
+	<key>Talent -</key>
+	<integer>11520</integer>
 </dict>
 </plist>
