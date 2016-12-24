@@ -70,17 +70,32 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     // MARK: Convert Function
     @IBAction func convertButtonLength(_ sender: Any) {
-        //I: Retrieve the numerical value from the text feild
-        //let amountAsString = txtAmountLength.text!
-        //We need to convert this now so we can math with it
-        let numberFormater = NumberFormatter()
-        
+        //I: Retrieve the numerical value from the input text feild
+        let amountAsStringLegth = inputLength.text!
+        let numberFormatterLength = NumberFormatter()
+        let amountAsNumberLength = numberFormatterLength.number(from: amountAsStringLegth)
+        let amountAsFloatLength = amountAsNumberLength?.floatValue
         //II: Retrieve the unit type that was selected
+        let indexOfSelectedUnitFromLength = unitFromLength.selectedRow(inComponent: 0)
+        let unitFromLengthVar = keysLength.object(at: indexOfSelectedUnitFromLength) as! String
         //III: Retrieve the unit type that was selected to retrurn to
+        let indexOfSelectedUnitToLength = unitToLength.selectedRow(inComponent: 0)
+        let unitToLengthVar = keysLength.object(at: indexOfSelectedUnitToLength) as! String
         //IV: Apply the two step conversion
+        // We are first testing it out on inches
+        // Step I
+        let conversionFactorToInch = unitsLength.value(forKey: unitFromLengthVar) as! Float
+        let resultAsInches = amountAsFloatLength! * conversionFactorToInch
+        // Step II
+        let conversionFactorFromInch = unitsLength.value(forKey: unitToLengthVar) as! Float
+        let result = resultAsInches / conversionFactorFromInch
+        // We are now making the actual function for the rest of the units
         //V: Format the result as a string
+        let resultAsStringLength = String.localizedStringWithFormat("%.3f", result)
         //VI: Assign the result string to the resultLength label
-        
+        resultLength.text = resultAsStringLength
+        // After testing, I now know that this whole conversion function works with ALL units in the .plist for conversion! 😀😀
+        // I do not need to write a whole conversion factor for every unit! Horray!!
     }
     // MARK: Keyboard close function
     //This is a function to close the keyboard
