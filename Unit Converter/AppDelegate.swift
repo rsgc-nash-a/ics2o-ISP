@@ -3,7 +3,7 @@
 //  Unit Converter
 //
 //  Created by Aaron Nash on 2016-12-15.
-//  Copyright © 2016 Aaron Nash. All rights reserved.
+//  Copyright © 2017 Aaron Nash. All rights reserved.
 //
 
 import UIKit

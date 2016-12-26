@@ -2,13 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Centimeter² - סנטימטר בריבוע</key>
+	<key>Centimeter² - סנטימטר מרובע</key>
 	<integer>1</integer>
-	<key>Meter² - מטר בריבוע</key>
+	<key>Meter² - מטר מרובע</key>
 	<integer>10000</integer>
-	<key>Kilometer² - קילומטר בריבוע</key>
+	<key>Kilometer² - קילומטר מרובע</key>
 	<integer>10000000000</integer>
-	<key>New item</key>
-	<integer>0</integer>
+	<key>Finger Breadth² - אצבע מרובעת</key>
+	<integer>4</integer>
+	<key>Hand Breadth² - טפח מרובע</key>
+	<integer>64</integer>
+	<key>Cubit² - אמה מרובע</key>
+	<integer>2304</integer>
+	<key>Inch² - אינטש מרובע</key>
+	<real>6.45</real>
+	<key>Foot² - פוט מרובע</key>
+	<real>929.03</real>
+	<key>Yard² - ירד מרובע</key>
+	<real>8361.27</real>
+	<key>Acre - אקר מרובע</key>
+	<integer>40470000000</integer>
+	<key>Beit Rova - בית רובע</key>
+	<real>24000</real>
+	<key>Beit Kav - בית קב</key>
+	<integer>138000</integer>
+	<key>Beit See&apos;a - בית סאה</key>
+	<integer>830000</integer>
+	<key>Beit Sattayim - בית סאתים</key>
+	<integer>11520000</integer>
+	<key>Beit Kor - בית כור</key>
+	<integer>172800000000</integer>
+	<key>Hairbreadth - שערות</key>
+	<real>0.3</real>
+	<key>Lentil&apos;s Area - עדשה</key>
+	<real>3.6</real>
+	<key>Bean&apos;s Area - גריס</key>
+	<real>10.8</real>
 </dict>
 </plist>

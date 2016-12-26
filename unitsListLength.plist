@@ -26,16 +26,18 @@
 	<integer>48</integer>
 	<key>Seet Capol - סיט כפול</key>
 	<integer>16</integer>
-	<key>Zeres - זרת</key>
+	<key>Seet - סיט</key>
+	<integer>8</integer>
+	<key>Span - זרת</key>
 	<integer>24</integer>
-	<key>Kanah - קנה</key>
+	<key>Reed - קנה</key>
 	<integer>288</integer>
 	<key>Ris (Staduim) - ריס</key>
 	<integer>12800</integer>
 	<key>Talmudic Mile - מיל תלמודי</key>
-	<real>11500</real>
+	<integer>9800</integer>
 	<key>Persian Mile - פרסה</key>
-	<integer>384000</integer>
+	<real>384000</real>
 	<key>Day&apos;s Walk - מלך יום</key>
 	<integer>3840000</integer>
 	<key>Nautical Mile - מייל ימי</key>
