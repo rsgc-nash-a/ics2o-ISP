@@ -56,8 +56,8 @@
 		3F6EEEBC1E0F07E700A2F38B /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				3F6EEEBA1E0F07D900A2F38B /* CurrencyViewController.swift */,
 				3F6EEEB81E0F07B900A2F38B /* unitsListCurrency.plist */,
+				3F6EEEBA1E0F07D900A2F38B /* CurrencyViewController.swift */,
 			);
 			name = Currency;
 			path = ..;
