@@ -14,14 +14,11 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var unitsCurrency: NSDictionary = [:]
     // We are now going to define an NSAarray here
     var keysCurrency: NSArray!
-    
     // MARK: Outlets
     
     @IBOutlet weak var inputCurrency: UITextField!
     @IBOutlet weak var resultCurrency: UILabel!
-    
     @IBOutlet weak var unitFromCurrency: UIPickerView!
-    
     @IBOutlet weak var unitToCurrency: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +66,34 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let title = keys.object(at: row) as! String
         
         return title
+    }
+    // MARK: Convert Function
+    @IBAction func convertButtonCurrency(_ sender: Any) {
+        //I: Retrieve the numerical value from the input text feild
+        let amountAsStringLegth = inputCurrency.text!
+        let numberFormatterCurrency = NumberFormatter()
+        let amountAsNumberCurrency = numberFormatterCurrency.number(from: amountAsStringLegth)
+        let amountAsFloatCurrency = amountAsNumberCurrency?.floatValue
+        //II: Retrieve the unit type that was selected
+        let indexOfSelectedUnitFromCurrency = unitFromCurrency.selectedRow(inComponent: 0)
+        let unitFromCurrencyVar = keysCurrency.object(at: indexOfSelectedUnitFromCurrency) as! String
+        //III: Retrieve the unit type that was selected to retrurn to
+        let indexOfSelectedUnitToCurrency = unitToCurrency.selectedRow(inComponent: 0)
+        let unitToCurrencyVar = keysCurrency.object(at: indexOfSelectedUnitToCurrency) as! String
+        //IV: Apply the two step conversion
+        // Step I
+        let conversionFactorToCurrency = unitsCurrency.value(forKey: unitFromCurrencyVar) as! Float
+        let resultAsCurrency = amountAsFloatCurrency! * conversionFactorToCurrency
+        // Step II
+        let conversionFactorFromCurrency = unitsCurrency.value(forKey: unitToCurrencyVar) as! Float
+        let result = resultAsCurrency / conversionFactorFromCurrency
+        //V: Format the rsult as a a string
+        let resultAsStringCurrency = String.localizedStringWithFormat("%.2f", result)
+        //VI: Assign the result string to the resultCurrency label
+        resultCurrency.text = resultAsStringCurrency
+        // The end of the function
+        
+    }
 
     // MARK: Keyboard close function
     //This is a function to close the keyboard
@@ -81,4 +106,3 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
 
  }
-}
