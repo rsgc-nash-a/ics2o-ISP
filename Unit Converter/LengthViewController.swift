@@ -36,7 +36,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     // MARK: Functions
     // MARK: Sort Function
-    // this is the function that is used to sort the keys
+    // This is the function that is used to sort the keys
     func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
         let firstKey = first as! String
         let secondKey = second as! String

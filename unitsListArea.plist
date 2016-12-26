@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   unitsListArea.plist
-   Unit Converter
-
-   Created by Aaron Nash on 2016-12-24.
-   Copyright (c) 2016 Aaron Nash. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>Centimeter² - סנטימטר בריבוע</key>
+	<integer>1</integer>
+	<key>Meter² - מטר בריבוע</key>
+	<integer>10000</integer>
+	<key>Kilometer² - קילומטר בריבוע</key>
+	<integer>10000000000</integer>
+	<key>New item</key>
+	<integer>0</integer>
+</dict>
 </plist>

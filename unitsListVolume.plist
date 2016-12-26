@@ -6,45 +6,65 @@
 	<integer>1</integer>
 	<key>Liter - ליטר</key>
 	<integer>1000</integer>
-	<key>Centimeter³ -  ³סנטימטר</key>
+	<key>Centimeter³ - סנטימטר מוקב</key>
 	<integer>1</integer>
-	<key>Meter³  - ³מטר</key>
+	<key>Meter³  - מטר מעוקב</key>
 	<integer>100000</integer>
-	<key>CBeitzah - </key>
+	<key>Desert Egg-bulk - כביצה מדברי</key>
 	<real>57.6</real>
-	<key>Uklah</key>
+	<key>Uklah - עולכלה</key>
 	<real>69.12</real>
-	<key>Tomen</key>
+	<key>Tomen - תומן</key>
 	<real>172.8</real>
-	<key>Quarter Kav - </key>
+	<key>Quarter Kav - רובע</key>
 	<real>345.6</real>
-	<key>Kav -</key>
+	<key>Kav - קב</key>
 	<real>1382.4</real>
-	<key>Tarkav -</key>
+	<key>Tarkav - תרקב</key>
 	<real>4147.2</real>
-	<key>Se&apos;a -</key>
+	<key>Se&apos;a - סאה</key>
 	<real>8294.4</real>
-	<key>Kortov -</key>
+	<key>Kortov - קורטוב</key>
 	<real>5.4</real>
+	<key>Reveet - רביעית</key>
+	<real>86.40000000000001</real>
 	<key>Log - לוג</key>
 	<real>345.6</real>
-	<key>Hin -</key>
+	<key>Hin - הין</key>
 	<real>4147.2</real>
-	<key>Fourty Se&apos;a</key>
+	<key>Fourty Se&apos;a - ארבעים סאה</key>
 	<integer>331776</integer>
-	<key>Homer -</key>
+	<key>Homer - חומר</key>
 	<integer>248832</integer>
-	<key>Kor -</key>
+	<key>Kor - כור</key>
 	<integer>248832</integer>
-	<key>Letekh -</key>
+	<key>Letekh - לתך</key>
 	<integer>124416</integer>
-	<key>Ephah -</key>
+	<key>Ephah - איפה</key>
 	<real>24883.2</real>
-	<key>Issaron Omer -</key>
+	<key>Issaron Omer - עוסרון, עומר</key>
 	<real>2488.32</real>
-	<key>Bat - </key>
+	<key>Bat - בת</key>
 	<real>24883.2</real>
-	<key>Mesura - </key>
+	<key>Mesura - משורה</key>
 	<integer>9</integer>
+	<key>Inch³ - אינטש מעוקב</key>
+	<real>0.0610237</real>
+	<key>Foot³ - פוט מעוקב</key>
+	<real>28316.8</real>
+	<key>Fluid Ounce</key>
+	<real>28.4130625</real>
+	<key>Gill - גיל</key>
+	<real>142.0653125</real>
+	<key>Pint - פינט</key>
+	<real>568.26125</real>
+	<key>Quart - רביעית אמריקאי</key>
+	<real>1136.5225</real>
+	<key>Gallon - גלון</key>
+	<real>4546.09</real>
+	<key>Peck - פק</key>
+	<real>9091.543100000001</real>
+	<key>Bushel - ליבושל</key>
+	<real>36369.4498</real>
 </dict>
 </plist>

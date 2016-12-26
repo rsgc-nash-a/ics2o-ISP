@@ -86,7 +86,6 @@
 			children = (
 				3F6EEEB61E0F000300A2F38B /* unitsListArea.plist */,
 				3FDA5AD11E0438E4008C159C /* AreaViewController.swift */,
-				3FBB9A221E032A7E0065AFF2 /* Main.storyboard */,
 			);
 			name = Area;
 			sourceTree = "<group>";
@@ -115,6 +114,7 @@
 				3FAB08E81E0AD2C900D47AA3 /* Volume */,
 				3FAB08EA1E0AD2E500D47AA3 /* Area */,
 				3FBB9A201E032A7E0065AFF2 /* ViewController.swift */,
+				3FBB9A221E032A7E0065AFF2 /* Main.storyboard */,
 				3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */,
 				3FBB9A271E032A7E0065AFF2 /* LaunchScreen.storyboard */,
 				3FBB9A2A1E032A7E0065AFF2 /* Info.plist */,

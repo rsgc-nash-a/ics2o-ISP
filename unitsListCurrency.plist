@@ -10,39 +10,39 @@
 	<real>3.82</real>
 	<key>Peruta - פרוטה</key>
 	<real>0.01</real>
-	<key>Kontrank - </key>
+	<key>Kontrank - קונטרנק</key>
 	<real>0.02</real>
-	<key>Mesimas - </key>
+	<key>Mesimas - מסימס</key>
 	<real>0.04</real>
-	<key>Isar -</key>
+	<key>Isar - איסר</key>
 	<real>0.08</real>
-	<key>Dopundium - </key>
+	<key>Dopundium - פונדיון</key>
 	<real>0.16</real>
-	<key>Ma&apos;a -</key>
+	<key>Ma&apos;a - מעה</key>
 	<real>0.32</real>
-	<key>Gera -</key>
+	<key>Gera - גרה</key>
 	<real>0.32</real>
-	<key>Istera -</key>
+	<key>Istera - אסתרה</key>
 	<real>0.96</real>
-	<key>Tarpik -</key>
+	<key>Tarpik - טרפעיק</key>
 	<real>0.96</real>
-	<key>Dinar -</key>
+	<key>Dinar - דינר</key>
 	<real>1.92</real>
 	<key>Zuz - זוז</key>
 	<real>1.92</real>
 	<key>Shekel - שקל</key>
 	<real>3.84</real>
-	<key>Beka -</key>
+	<key>Beka - בקע</key>
 	<real>3.84</real>
-	<key>Sela -</key>
+	<key>Sela - סלע</key>
 	<real>7.68</real>
 	<key>Holy Shekel - שקל הקדוש</key>
 	<real>7.68</real>
-	<key>Golden Dinar -</key>
+	<key>Golden Dinar - דינר זהב</key>
 	<integer>48</integer>
-	<key>Maneh -</key>
+	<key>Maneh - מנה</key>
 	<integer>192</integer>
-	<key>Talent -</key>
+	<key>Talent - כיכר</key>
 	<integer>11520</integer>
 </dict>
 </plist>

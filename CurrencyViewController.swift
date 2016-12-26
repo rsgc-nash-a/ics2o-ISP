@@ -8,28 +8,77 @@
 
 import UIKit
 
-class CurrencyViewController: UIViewController {
-
+class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    // We are putting this here so that we can use throught the whole class
+    var unitsCurrency: NSDictionary = [:]
+    // We are now going to define an NSAarray here
+    var keysCurrency: NSArray!
+    
+    // MARK: Outlets
+    
+    @IBOutlet weak var inputCurrency: UITextField!
+    @IBOutlet weak var resultCurrency: UILabel!
+    
+    @IBOutlet weak var unitFromCurrency: UIPickerView!
+    
+    @IBOutlet weak var unitToCurrency: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // We now want to put all of the contents from unitsListCurrency.plist
+        // I: Get a refrence to the app bundle
+        let appBundle = Bundle.main
+        // II: Get a refrence to the path that contains the unit
+        let filePath = appBundle.path(forResource: "unitsListCurrency", ofType: "plist")!
+        // We now are loading the content of the file into the dictioanary
+        unitsCurrency = NSDictionary(contentsOfFile: filePath)!
+        // Now we need to Initalize the keys with the names of the units
+        keysCurrency = unitsCurrency.allKeys as NSArray
     }
-
+    // MARK: Functions
+    // MARK: Sort Function
+    // This is the function that is used to sort the keys
+    func sortKeys(first: AnyObject, second: AnyObject) -> Bool {
+        let firstKey = first as! String
+        let secondKey = second as! String
+        let comparison = firstKey.caseInsensitiveCompare(secondKey) == ComparisonResult.orderedAscending
+        // We want it to compare based on their position on the list
+        return comparison
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Delegets and Data sources
+    // We shall now be stating the actuall properties of the picker view and how we want it to act
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        // We only want it to construct 1 component
+        return 1
     }
-    */
+    // We are now telling the picker view how many rows we want it to show us.
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        // We want it to return the count of the unitsCurrency
+        return unitsCurrency.count
+    }
+    // We are now telling the picker view what we want each row to say, so that the user will know which one to choose from.
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        // We want the titles for the row to be the key in the unitsListCurrency.plist file
+        let keys = unitsCurrency.allKeys as NSArray
+        
+        let title = keys.object(at: row) as! String
+        
+        return title
 
+    // MARK: Keyboard close function
+    //This is a function to close the keyboard
+    func closeKeyBoard(){
+        self.view.endEditing(true)
+    }
+    // This function overides the previus function
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        closeKeyBoard()
+    }
+
+ }
 }

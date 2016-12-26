@@ -38,5 +38,7 @@
 	<integer>384000</integer>
 	<key>Day&apos;s Walk - מלך יום</key>
 	<integer>3840000</integer>
+	<key>Nautical Mile - מייל ימי</key>
+	<integer>185200</integer>
 </dict>
 </plist>
