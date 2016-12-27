@@ -2,7 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Graem - גרם</key>
-	<string></string>
+	<key>Gram - גרם</key>
+	<integer>1</integer>
+	<key>Kilogram - קילוגרם</key>
+	<integer>1000</integer>
+	<key>Short Ton</key>
+	<real>907184.74</real>
+	<key>Pound</key>
+	<real>453.59237</real>
+	<key>Stone</key>
+	<real>6350.2932</real>
+	<key>Ounce</key>
+	<real>28.349523</real>
+	<key>Metric Ton</key>
+	<real>1000000</real>
+	<key>Long Ton</key>
+	<real>1016046.9</real>
+	<key>Talent</key>
+	<integer>27000</integer>
+	<key>Maneh</key>
+	<real>449.99999982</real>
+	<key>Tatimar</key>
+	<real>224.99999991</real>
+	<key>Unkeya</key>
+	<real>35.9999999856</real>
+	<key>Sela</key>
+	<real>17.9999999928</real>
+	<key>Shekel</key>
+	<real>8.9999999964</real>
+	<key>Dinar</key>
+	<real>4.4999999982</real>
 </dict>
 </plist>

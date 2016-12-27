@@ -216,8 +216,8 @@
                                 <rect key="frame" x="0.0" y="48" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="YeV-rX-54f" id="bph-4t-Wzp"/>
-                                    <outlet property="delegate" destination="YeV-rX-54f" id="kEf-Sq-0eb"/>
+                                    <outlet property="dataSource" destination="VYR-ny-3FY" id="ALN-FZ-14I"/>
+                                    <outlet property="delegate" destination="VYR-ny-3FY" id="cdl-3x-GlM"/>
                                 </connections>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fma-On-cWa" userLabel="Mass Button">
@@ -229,6 +229,7 @@
                                 </state>
                                 <connections>
                                     <action selector="convertButtonArea:" destination="YeV-rX-54f" eventType="touchUpInside" id="a6a-3A-4xK"/>
+                                    <action selector="convertButtonMass:" destination="VYR-ny-3FY" eventType="touchUpInside" id="fbZ-8V-PIS"/>
                                     <action selector="convertButtonVolume:" destination="sen-X7-f4O" eventType="touchUpInside" id="U1i-2M-Ztj"/>
                                 </connections>
                             </button>
@@ -243,8 +244,8 @@
                                 <rect key="frame" x="0.0" y="512" width="375" height="155"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="YeV-rX-54f" id="JUi-Jf-I19"/>
-                                    <outlet property="delegate" destination="YeV-rX-54f" id="MtP-xB-syD"/>
+                                    <outlet property="dataSource" destination="VYR-ny-3FY" id="X0C-vb-eml"/>
+                                    <outlet property="delegate" destination="VYR-ny-3FY" id="ULZ-Su-BQo"/>
                                 </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tu1-np-4Ye">
@@ -268,6 +269,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="inputMass" destination="fF1-bo-zjL" id="HyH-2e-Wh9"/>
+                        <outlet property="resultMass" destination="uDY-2g-9XU" id="cMO-HD-diH"/>
+                        <outlet property="unitFromMass" destination="37F-Gi-36L" id="xNn-B3-ZbQ"/>
+                        <outlet property="unitToMass" destination="m0R-Qb-GME" id="V03-Lc-1u4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7M5-HY-0Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
