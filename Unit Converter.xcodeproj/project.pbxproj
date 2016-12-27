@@ -12,6 +12,7 @@
 		3F6EEEB91E0F07B900A2F38B /* unitsListCurrency.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F6EEEB81E0F07B900A2F38B /* unitsListCurrency.plist */; };
 		3F6EEEBB1E0F07D900A2F38B /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EEEBA1E0F07D900A2F38B /* CurrencyViewController.swift */; };
 		3F8D0FEF1E0EE29800472BE5 /* unitsListVolume.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F8D0FEE1E0EE29800472BE5 /* unitsListVolume.plist */; };
+		3FA2F1CF1E12AD6900C22EAF /* MassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA2F1CE1E12AD6900C22EAF /* MassViewController.swift */; };
 		3FAB030C1E11763F001F7CBE /* unitsListMass.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FAB030B1E11763F001F7CBE /* unitsListMass.plist */; };
 		3FBB9A1F1E032A7E0065AFF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */; };
 		3FBB9A211E032A7E0065AFF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB9A201E032A7E0065AFF2 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 		3F6EEEB81E0F07B900A2F38B /* unitsListCurrency.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = unitsListCurrency.plist; sourceTree = "<group>"; };
 		3F6EEEBA1E0F07D900A2F38B /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		3F8D0FEE1E0EE29800472BE5 /* unitsListVolume.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = unitsListVolume.plist; path = ../unitsListVolume.plist; sourceTree = "<group>"; };
+		3FA2F1CE1E12AD6900C22EAF /* MassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MassViewController.swift; path = ../MassViewController.swift; sourceTree = "<group>"; };
 		3FAB030B1E11763F001F7CBE /* unitsListMass.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = unitsListMass.plist; path = ../unitsListMass.plist; sourceTree = "<group>"; };
 		3FBB9A1B1E032A7E0065AFF2 /* Unit Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		3FAB030E1E117657001F7CBE /* Mass */ = {
 			isa = PBXGroup;
 			children = (
+				3FA2F1CE1E12AD6900C22EAF /* MassViewController.swift */,
 				3FAB030B1E11763F001F7CBE /* unitsListMass.plist */,
 			);
 			name = Mass;
@@ -218,6 +221,7 @@
 				3F6EEEBB1E0F07D900A2F38B /* CurrencyViewController.swift in Sources */,
 				3FBB9A1F1E032A7E0065AFF2 /* AppDelegate.swift in Sources */,
 				3FDA5AD21E0438E4008C159C /* AreaViewController.swift in Sources */,
+				3FA2F1CF1E12AD6900C22EAF /* MassViewController.swift in Sources */,
 				3FDA5AD61E043C42008C159C /* UnitFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
