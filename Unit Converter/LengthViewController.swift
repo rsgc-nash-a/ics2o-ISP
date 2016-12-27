@@ -95,7 +95,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         //VI: Assign the result string to the resultLength label
         resultLength.text = resultAsStringLength
         // After testing, I now know that this whole conversion function works with ALL units in the .plist for conversion! 😀😀
-        // I do not need to write a whole conversion factor for every unit! Horray!!
+        // I do not need to write a whole conversion factor for every unit! Horray!
     }
     // MARK: Keyboard close function
     //This is a function to close the keyboard
@@ -107,3 +107,4 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         closeKeyBoard()
     }
    }
+ 
