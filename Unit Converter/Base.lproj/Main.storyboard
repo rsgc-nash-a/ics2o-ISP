@@ -534,6 +534,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="fakeButtonArea" destination="MGk-qs-Kf5" id="a76-Z6-EXv"/>
                         <outlet property="inputArea" destination="NFL-YS-wpB" id="b5D-WW-yfp"/>
                         <outlet property="resultArea" destination="fl2-T3-Jje" id="Ojy-d6-9jT"/>
                         <outlet property="unitFromArea" destination="11E-w8-dPm" id="Cw5-JL-hkM"/>
@@ -546,7 +547,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Rfb-Hk-g8x"/>
+        <segue reference="hgA-la-uTe"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
