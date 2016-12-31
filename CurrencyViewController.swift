@@ -92,9 +92,8 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         //VI: Assign the result string to the resultCurrency label
         resultCurrency.text = resultAsStringCurrency
         // The end of the function
-        
-    }
-
+        }
+    
     // MARK: Keyboard close function
     //This is a function to close the keyboard
     func closeKeyBoard(){
