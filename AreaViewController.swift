@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // We are putting this here so that we can use throught the whole class
     var unitsArea: NSDictionary = [:]
@@ -21,6 +21,7 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var unitToArea: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // We are now putting this here so that the button will become deactivated when the 
         // We now want to put all of the contents from unitsListArea.plist
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
@@ -93,7 +94,6 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //VI: Assign the result string to the resultArea label
         resultArea.text = resultAsStringArea
         // The end of the function
-        
     }
     
     // MARK: Keyboard close function
@@ -105,5 +105,5 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
-    
+    // MARK: Limit amount of decimals to one function
 }
