@@ -77,9 +77,9 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBAction func convertButtonArea(_ sender: Any) {
         
         //I: Retrieve the numerical value from the input text feild
-        let amountAsStringLegth = inputArea.text!
+        let amountAsStringArea = inputArea.text!
         let numberFormatterArea = NumberFormatter()
-        let amountAsNumberArea = numberFormatterArea.number(from: amountAsStringLegth)
+        let amountAsNumberArea = numberFormatterArea.number(from: amountAsStringArea)
         let amountAsFloatArea = amountAsNumberArea?.floatValue
         //II: Retrieve the unit type that was selected
         let indexOfSelectedUnitFromArea = unitFromArea.selectedRow(inComponent: 0)

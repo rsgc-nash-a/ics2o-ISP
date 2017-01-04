@@ -84,6 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="fakeButtonCurrency" destination="Ncg-he-A9A" id="BwH-z6-aZs"/>
                         <outlet property="inputCurrency" destination="FIv-I6-Cg1" id="7Dr-o8-K9M"/>
                         <outlet property="resultCurrency" destination="qmF-eu-KKo" id="nUv-3v-1R2"/>
                         <outlet property="unitFromCurrency" destination="vfX-c1-jSE" id="eLM-Oc-35b"/>
@@ -130,7 +131,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-45-LjL">
                                 <rect key="frame" x="0.0" y="95" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Currency - כסף"/>
                                 <connections>
                                     <segue destination="fcQ-1b-0vS" kind="show" id="8fb-Zz-tgW"/>
@@ -550,7 +553,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ehK-7f-NoD"/>
+        <segue reference="hgA-la-uTe"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

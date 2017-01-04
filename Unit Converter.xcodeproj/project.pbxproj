@@ -90,6 +90,7 @@
 			children = (
 				3F8D0FEE1E0EE29800472BE5 /* unitsListVolume.plist */,
 				3FDA5AD31E0438F4008C159C /* VolumeViewController.swift */,
+				3FAB08EA1E0AD2E500D47AA3 /* Area */,
 			);
 			name = Volume;
 			sourceTree = "<group>";
@@ -126,7 +127,6 @@
 				3F6EEEBC1E0F07E700A2F38B /* Currency */,
 				3FAB08E71E0AD2B900D47AA3 /* Length */,
 				3FAB08E81E0AD2C900D47AA3 /* Volume */,
-				3FAB08EA1E0AD2E500D47AA3 /* Area */,
 				3FBB9A201E032A7E0065AFF2 /* ViewController.swift */,
 				3FBB9A221E032A7E0065AFF2 /* Main.storyboard */,
 				3FBB9A1E1E032A7E0065AFF2 /* AppDelegate.swift */,

@@ -23,6 +23,11 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var fakeButtonLength: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up the delegete of the inputLength to this class
+        inputLength.delegate = self
+        if (inputLength.text?.isEmpty)! {
+            fakeButtonLength.isUserInteractionEnabled = false
+        }
         // We now want to put all of the contents from unitsListLength.plist
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
@@ -107,5 +112,10 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
+    // MARK: Function for disabling button through the fake button
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        fakeButtonLength.isUserInteractionEnabled = true
+    }
+
    }
  

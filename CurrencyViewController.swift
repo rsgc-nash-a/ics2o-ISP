@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // We are putting this here so that we can use throught the whole class
     var unitsCurrency: NSDictionary = [:]
@@ -20,8 +20,14 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var resultCurrency: UILabel!
     @IBOutlet weak var unitFromCurrency: UIPickerView!
     @IBOutlet weak var unitToCurrency: UIPickerView!
+    @IBOutlet weak var fakeButtonCurrency: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up the delegete of the inputCurrency to this class
+        inputCurrency.delegate = self
+        if (inputCurrency.text?.isEmpty)! {
+            fakeButtonCurrency.isUserInteractionEnabled = false
+        }
         // We now want to put all of the contents from unitsListCurrency.plist
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
@@ -77,7 +83,7 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         //II: Retrieve the unit type that was selected
         let indexOfSelectedUnitFromCurrency = unitFromCurrency.selectedRow(inComponent: 0)
         let unitFromCurrencyVar = keysCurrency.object(at: indexOfSelectedUnitFromCurrency) as! String
-        //III: Retrieve the unit type that was selected to retrurn to
+        //III: Retrieve the unit type that was selected to retrurn to a string
         let indexOfSelectedUnitToCurrency = unitToCurrency.selectedRow(inComponent: 0)
         let unitToCurrencyVar = keysCurrency.object(at: indexOfSelectedUnitToCurrency) as! String
         //IV: Apply the two step conversion
@@ -103,5 +109,8 @@ class CurrencyViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
-
+    // MARK: Function for disabling button through the fake button
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        fakeButtonCurrency.isUserInteractionEnabled = true
+    }
  }

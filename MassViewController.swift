@@ -23,7 +23,7 @@ class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var fakeButtonMass: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Setting up the delegete of the inputVolume to this class
+        // Setting up the delegete of the inputMass to this class
         inputMass.delegate = self
         if (inputMass.text?.isEmpty)! {
             fakeButtonMass.isUserInteractionEnabled = false
