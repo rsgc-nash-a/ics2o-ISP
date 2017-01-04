@@ -4,9 +4,9 @@
 <dict>
 	<key>American Dollar - דולר אמריקני</key>
 	<integer>1</integer>
-	<key>Canadian Dollar - דולר קנדי</key>
+	<key>Canadian Dollar $ - דולר קנדי</key>
 	<real>1.35</real>
-	<key>Israeli New Shekel - שקל חדש</key>
+	<key>Israeli New Shekel ₪ - שקל חדש</key>
 	<real>3.82</real>
 	<key>Peruta - פרוטה</key>
 	<real>0.01</real>
