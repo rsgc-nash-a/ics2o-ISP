@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VolumeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class VolumeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // We are putting this here so that we can use throught the whole class
     var unitsVolume: NSDictionary = [:]
@@ -20,9 +20,15 @@ class VolumeViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var resultVolume: UILabel!
     @IBOutlet weak var unitFromVolume: UIPickerView!
     @IBOutlet weak var unitToVolume: UIPickerView!
+    @IBOutlet weak var fakeButtonVolume: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // We now want to put all of the contents from unitsListVolume.plist
+        // Setting up the delegete of the inputVolume to this class
+        inputVolume.delegate = self
+        if (inputVolume.text?.isEmpty)! {
+            fakeButtonVolume.isUserInteractionEnabled = false
+        }
+        // We now want to put all of the contents from unitsListVolume.plist into the picker view
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
         // II: Get a refrence to the path that contains the unit
@@ -104,5 +110,8 @@ class VolumeViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
-    
+    // MARK: Function for disabling button through the fake button
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        fakeButtonVolume.isUserInteractionEnabled = true
+    }
 }

@@ -19,7 +19,6 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var resultArea: UILabel!
     @IBOutlet weak var unitFromArea: UIPickerView!
     @IBOutlet weak var unitToArea: UIPickerView!
-    // This button is to make sure that the user cannot touch it when there is nothing in the text field. It sort of acts like a screen popup that can be used in HTML5 to make it so that the user cannot touch anything that it is covering, even if it is shaded in. Sort of like with websites that don't let you in if you have an addblocker on. For example,< class="container clearfix default-template ad-300-by-250" >
     @IBOutlet weak var fakeButtonArea: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,7 +110,7 @@ class AreaViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
-    // MARK: Function for disabling button
+    // MARK: Function for disabling button through the fake button
     func textFieldDidBeginEditing(_ textField: UITextField) {
         fakeButtonArea.isUserInteractionEnabled = true
     }

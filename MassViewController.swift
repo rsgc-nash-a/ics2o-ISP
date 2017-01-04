@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     // We are putting this here so that we can use throught the whole class
     var unitsMass: NSDictionary = [:]
@@ -20,8 +20,14 @@ class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var resultMass: UILabel!
     @IBOutlet weak var unitFromMass: UIPickerView!
     @IBOutlet weak var unitToMass: UIPickerView!
+    @IBOutlet weak var fakeButtonMass: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setting up the delegete of the inputVolume to this class
+        inputMass.delegate = self
+        if (inputMass.text?.isEmpty)! {
+            fakeButtonMass.isUserInteractionEnabled = false
+        }
         // We now want to put all of the contents from unitsListMass.plist
         // I: Get a refrence to the app bundle
         let appBundle = Bundle.main
@@ -105,5 +111,8 @@ class MassViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         closeKeyBoard()
     }
-    
+    // MARK: Function for disabling button through the fake button
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        fakeButtonMass.isUserInteractionEnabled = true
+    }
 }

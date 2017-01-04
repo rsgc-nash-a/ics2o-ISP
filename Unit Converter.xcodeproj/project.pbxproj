@@ -70,8 +70,8 @@
 		3FAB030E1E117657001F7CBE /* Mass */ = {
 			isa = PBXGroup;
 			children = (
-				3FA2F1CE1E12AD6900C22EAF /* MassViewController.swift */,
 				3FAB030B1E11763F001F7CBE /* unitsListMass.plist */,
+				3FA2F1CE1E12AD6900C22EAF /* MassViewController.swift */,
 			);
 			name = Mass;
 			sourceTree = "<group>";

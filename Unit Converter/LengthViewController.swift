@@ -3,12 +3,12 @@
 //  Unit Converter
 //
 //  Created by Aaron Nash on 2016-12-16.
-//  Copyright © 2017 Aaron Nash. All rights reserved.
+//  Copyright ©2017 Aaron Nash. All rights reserved.
 //
 
 import UIKit
 
-class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
     // We are putting this here so that we can use throught the whole class
     var unitsLength: NSDictionary = [:]
@@ -20,6 +20,7 @@ class LengthViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var resultLength: UILabel!
     @IBOutlet weak var unitFromLength: UIPickerView!
     @IBOutlet weak var unitToLength: UIPickerView!
+    @IBOutlet weak var fakeButtonLength: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // We now want to put all of the contents from unitsListLength.plist
