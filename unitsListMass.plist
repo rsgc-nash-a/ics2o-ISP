@@ -6,19 +6,19 @@
 	<integer>1</integer>
 	<key>Kilogram - קילוגרם</key>
 	<integer>1000</integer>
-	<key>Short Ton</key>
+	<key>Short Ton - טון קצר</key>
 	<real>907184.74</real>
-	<key>Pound</key>
+	<key>Pound - פּאוד</key>
 	<real>453.59237</real>
-	<key>Stone</key>
+	<key>Stone - אבן</key>
 	<real>6350.2932</real>
-	<key>Ounce</key>
+	<key>Ounce - אונקיה</key>
 	<real>28.349523</real>
-	<key>Metric Ton</key>
+	<key>Metric Ton - טון מטרי</key>
 	<real>1000000</real>
-	<key>Long Ton</key>
+	<key>Long Ton - טון ארוך</key>
 	<real>1016046.9</real>
-	<key>Talent</key>
+	<key>Talent - </key>
 	<integer>27000</integer>
 	<key>Maneh</key>
 	<real>449.99999982</real>
